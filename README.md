@@ -52,8 +52,8 @@ Download and install a Winlator fork that supports launching `.desktop` files vi
 
 #### 7. **Download and Configure Launcher Script**
 
-- [Download `pico8_launcher.sh`](#) ← *(Replace with actual link)*
-- Open the script in a text editor.
+- Download [`pico8_launcher.sh`](https://github.com/RobZombie9043/es-de-pico8/blob/main/pico8_launcher.sh)
+- If your drive letter you assigned for the pico8 folder earlier was something other than F: then open the script in a text editor.
 
 Update the following line with your **Winlator drive letter** from earlier:
 
@@ -61,7 +61,12 @@ Update the following line with your **Winlator drive letter** from earlier:
 WIN_ROM_FILE="F:\\\\$ROM_FILE"
 ```
 
-> 💡 For example, if your drive letter is `F:`, it should look exactly like above.
+> 💡 For example, if your drive letter is `G:`, it should look like:.
+
+```bash
+WIN_ROM_FILE="G:\\\\$ROM_FILE"
+```
+
 
 - Save the file and copy it to:
 
@@ -71,9 +76,9 @@ WIN_ROM_FILE="F:\\\\$ROM_FILE"
 
 ---
 
-### 🗂️ Add PICO-8 to `es_systems.xml`
+### 🗂️ Add winlator to the PICO-8 system in a custom `es_systems.xml` file
 
-Edit your `es_systems.xml` file and add the following block:
+Edit your custom `es_systems.xml` file and add the following block:
 
 ```xml
 <system>
@@ -102,17 +107,24 @@ Edit your `es_systems.xml` file and add the following block:
 ```
 
 > 🔧 Be sure to replace `/storage/XXXX-XXXX/ROMs/pico8/pico8.desktop` with your actual storage device ID and path where the `.desktop` file is located.   
-SD card would be something like `/storage/XXXX-XXXX/ROMs/pico8/pico8.desktop` where xxxx-xxxx is the unique sd card identifier   
-Internal storage would be something like: `/storage/emulated/0/ROMs/pico8/pico8.desktop`   
+ - SD card would be something like:
+```bash
+/storage/XXXX-XXXX/ROMs/pico8/pico8.desktop
+```
+where xxxx-xxxx is the unique sd card identifier   
 
+ - Internal storage would be something like:   
+```bash
+/storage/emulated/0/ROMs/pico8/pico8.desktop
+```
 ---
 
 ### 🎮 Final Steps
 
-1. Place `.p8` or `.png` carts into your `ROMs/pico8` folder.
-2. In ES-DE, set the **alternative emulator** for the `pico8` system:
+1. Place `.p8` or `.png` or `.p8.png` carts into your `ROMs/pico8` folder.
+2. [Optional] To be able to launch Splore, create a blank file named Splore.p8.png and place this into your `ROMs/pico8` folder.
+3. In ES-DE, set the **alternative emulator** for the `pico8` system:
    - Choose `Winlator (PRoot)` or `Winlator (Glibc)` depending on your installed fork.
-3. **Rescan ROMs** in ES-DE.
-4. **Launch your PICO-8 carts** from the `PICO-8` system tab!
-
+4. **Rescan ROMs** in ES-DE.
+5. **Launch your PICO-8 carts** from the `PICO-8` system tab!
 ---
