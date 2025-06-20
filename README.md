@@ -45,6 +45,8 @@ Download and install a Winlator fork that supports launching `.desktop` files vi
 
 - Copy `pico8.desktop` to your `ROMs/pico8` folder.
 
+> 💡 Make sure this shortcut is named exactly pico8.desktop for the script to work properly.
+
 ---
 
 ### 🛠️ Script Setup for ES-DE
