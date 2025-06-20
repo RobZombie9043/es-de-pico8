@@ -138,7 +138,7 @@ An example custom system file can be found here [es_systems.xml](https://github.
 1. Place `.p8` or `.png` or `.p8.png` carts into your `ROMs/pico8` folder.
 2. [Optional] To be able to launch Splore, create a blank file named Splore.p8.png and place this into your `ROMs/pico8` folder. This can be downloaded here - [Splore.p8.png](https://github.com/RobZombie9043/es-de-pico8/blob/main/Splore.p8.png)
 3. In ES-DE, set the **alternative emulator** for the `pico8` system:
-   - Choose `Winlator (PRoot)` or `Winlator (Glibc)` depending on your installed fork.
+   - Choose `Winlator (PRoot)` or `Winlator (Glibc)` depending on your installed fork. For bionic forks choose the `Winlator (Glibc)` option.
 4. **Rescan ROMs** in ES-DE.
 5. **Launch your PICO-8 carts** from the `PICO-8` system tab!
 ---
