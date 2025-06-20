@@ -147,10 +147,10 @@ An example custom system file can be found here [es_systems.xml](https://github.
 
 - **Winlator** uses `.desktop` files to pass launch parameters to it to launch Windows applications.
 - **PICO-8** reads the `execArgs` value in the `.desktop` file to determine which game cart to load or whether to launch **Splore**.
-- The `pico8_launcher.sh` script is executed by ES-DE before launching a game.
+- The `pico8_launcher.sh` script is executed by ES-DE when launching a pico8 game.
    - It modifies the `.desktop` file to update the `execArgs` field with the path to the selected PICO-8 cart.
-   - When Winlator is launched, it passes this updated `.desktop` file to PICO-8, which then loads the correct game.
+   - When Winlator is launched, it is then passed this updated `.desktop` file, which then loads Pico-8 and the selected game.
 
-This creates seamless integration between **ES-DE**, **Winlator**, and **native PICO-8**, allowing you to browse and launch carts just like any other system.
+This creates seamless integration between **ES-DE**, **Winlator**, and **native PICO-8**, allowing you to browse and launch carts just like any other system and also launch into Splore.
 
 ---
