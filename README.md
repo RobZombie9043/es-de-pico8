@@ -117,6 +117,9 @@ where xxxx-xxxx is the unique sd card identifier
 ```bash
 /storage/emulated/0/ROMs/pico8/pico8.desktop
 ```
+
+An example custom system file can be found here [es_systems.xml](https://github.com/RobZombie9043/es-de-pico8/blob/main/es_systems.xml)
+
 ---
 
 ### 🎮 Final Steps
