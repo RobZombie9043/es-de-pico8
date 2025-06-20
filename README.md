@@ -1,4 +1,4 @@
-## 🕹️ Native PICO-8 Setup for ES-DE on Android
+## 🕹️ Native PICO-8 Setup for ES-DE on Android through Winlator
 
 You can run native **PICO-8** on Android via **Winlator** and launch games directly from **ES-DE** using `.desktop` files.
 
