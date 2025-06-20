@@ -91,10 +91,10 @@ WIN_ROM_FILE="G:\\\\$ROM_FILE"
     <path>%ROMPATH%/pico8</path>
     <extension>.desktop .p8 .P8 .png .PNG</extension>
     <command label="Winlator Cmod Glibc (Standalone)">
-        %EMULATOR_WINLATOR-GLIBC% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %EXTRA_shortcut_path%=/storage/XXXX-XXXX/ROMs/pico8/pico8.desktop
+        %EMULATOR_WINLATOR-GLIBC% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %EXTRA_shortcut_path%=%ROMPATHRAW%/pico8/pico8.desktop
     </command>
     <command label="Winlator Cmod PRoot (Standalone)">
-        %EMULATOR_WINLATOR-PROOT% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %EXTRA_shortcut_path%=/storage/XXXX-XXXX/ROMs/pico8/pico8.desktop
+        %EMULATOR_WINLATOR-PROOT% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %EXTRA_shortcut_path%=%ROMPATHRAW%/pico8/pico8.desktop
     </command>
     <command label="Fake-08">
         %EMULATOR_RETROARCH% %EXTRA_CONFIGFILE%=/storage/emulated/0/Android/data/%ANDROIDPACKAGE%/files/retroarch.cfg %EXTRA_LIBRETRO%=/data/data/%ANDROIDPACKAGE%/cores/fake08_libretro_android.so %EXTRA_ROM%=%ROM%
@@ -108,18 +108,6 @@ WIN_ROM_FILE="G:\\\\$ROM_FILE"
     <platform>pico8</platform>
     <theme>pico8</theme>
 </system>
-```
-
-> 🔧 Be sure to replace `/storage/XXXX-XXXX/ROMs/pico8/pico8.desktop` with your actual storage device ID and path where the `.desktop` file is located.   
- - SD card would be something like:
-```bash
-/storage/XXXX-XXXX/ROMs/pico8/pico8.desktop
-```
-where xxxx-xxxx is the unique sd card identifier   
-
- - Internal storage would be something like:   
-```bash
-/storage/emulated/0/ROMs/pico8/pico8.desktop
 ```
 
 An example custom system file can be found here [es_systems.xml](https://github.com/RobZombie9043/es-de-pico8/blob/main/es_systems.xml)
