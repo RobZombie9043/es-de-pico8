@@ -2,6 +2,10 @@
 
 You can run native **PICO-8** on Android via **Winlator** and launch games directly from **ES-DE** using `.desktop` files.
 
+
+https://github.com/user-attachments/assets/661bf45b-6a51-4bab-9d2b-11b1d6e30f6f
+
+
 ---
 
 ### ✅ Requirements
