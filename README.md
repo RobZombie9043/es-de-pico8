@@ -103,14 +103,29 @@ WIN_ROM_FILE="G:\\\\$ROM_FILE"
 </system>
 ```
 
-An example custom system file can be found here [es_systems.xml](https://github.com/RobZombie9043/es-de-pico8/blob/main/es_systems.xml)
-
 - Save the file to:
 ```bash
 ~ES-DE/custom_systems/es_systems.xml
 ```
 
-> 💡 After making changes to the es_systems.xml make sure to fully exit out of ES-DE and restart it for the custom systems to be loaded.
+The latest version of Cmod (v13) has not been added to ES-DE yet. If you are using this you will need to add the following block to `es_find_rules.xml`
+```xml
+<emulator name="WINLATOR-CMOD">
+        <!-- Microsoft Windows emulator Winlator Cmod -->
+        <rule type="androidpackage">
+            <entry>com.winlator.cmod/.XServerDisplayActivity</entry>
+        </rule>
+    </emulator>
+```
+
+- Save the file to:
+```bash
+~ES-DE/custom_systems/es_find_rules.xml
+```
+
+Example custom system files can be found here [es_systems.xml](https://github.com/RobZombie9043/es-de-pico8/blob/main/es_systems.xml) and here [es_find_rules.xml](https://github.com/RobZombie9043/es-de-pico8/blob/main/es_find_rules.xml)
+
+> 💡 After making changes to the custom system files make sure to fully exit out of ES-DE and restart it for the custom systems to be loaded.
 
 ---
 
