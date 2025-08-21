@@ -92,6 +92,7 @@ WIN_ROM_FILE="G:\\\\$ROM_FILE"
     <fullname>PICO-8 Fantasy Console</fullname>
     <path>%ROMPATH%/pico8</path>
     <extension>.desktop .p8 .P8 .png .PNG</extension>
+    <command label="Winlator Cmod (Standalone)">%EMULATOR_WINLATOR-CMOD% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %EXTRA_shortcut_path%=%ROM%</command>
     <command label="Winlator Cmod Glibc (Standalone)">
         %EMULATOR_WINLATOR-GLIBC% %ACTIVITY_CLEAR_TASK% %ACTIVITY_CLEAR_TOP% %EXTRA_shortcut_path%=%ROMPATHRAW%/pico8/pico8.desktop
     </command>
