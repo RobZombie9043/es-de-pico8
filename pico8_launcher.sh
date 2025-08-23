@@ -31,8 +31,19 @@ if [ ! -f "$DESKTOP_FILE" ] || [ ! -w "$DESKTOP_FILE" ]; then
     exit 1
 fi
 
-# Try to replace line and save to temp file
-sed "s|^execArgs=.*|$UPDATED_EXECARGS|" "$DESKTOP_FILE" > "$DESKTOP_FILE.tmp"
+# If execArgs exists, replace it. Otherwise, insert it below [Extra Data].
+if grep -q "^execArgs=" "$DESKTOP_FILE"; then
+    sed "s|^execArgs=.*|$UPDATED_EXECARGS|" "$DESKTOP_FILE" > "$DESKTOP_FILE.tmp"
+else
+    awk -v new="$UPDATED_EXECARGS" '
+        /^\[Extra Data\]/ {
+            print
+            print new
+            next
+        }
+        { print }
+    ' "$DESKTOP_FILE" > "$DESKTOP_FILE.tmp"
+fi
 
 # Move temp file into place
 mv "$DESKTOP_FILE.tmp" "$DESKTOP_FILE"
